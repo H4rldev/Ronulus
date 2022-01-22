@@ -1,3 +1,2 @@
 # CPP-Text-RPG
-as
-yes
+Deez ballas
