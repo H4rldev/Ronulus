@@ -1,2 +1,2 @@
 # CPP-Text-RPG
-Deez ballas
+Dietz ballas
