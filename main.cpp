@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
-#include "difficulty/easy.cpp";
-#include "difficulty/hard.cpp";
-#include "difficulty/medium.cpp";
-#include "difficulty/expert.cpp";
+#include "easy.cpp";
+#include "hard.cpp";
+#include "medium.cpp";
+#include "expert.cpp";
 using namespace std;
 
 string difficulty;
