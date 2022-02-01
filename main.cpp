@@ -1,49 +1,58 @@
 #include <iostream>
 #include <string>
-#include "easy.cpp";
-#include "hard.cpp";
-#include "medium.cpp";
-#include "expert.cpp";
+#include "easy.hpp"
+#include "hard.hpp"
+#include "medium.hpp"
+#include "expert.hpp"
+#include "clear.hpp"
 using namespace std;
 
-string difficulty;
+int difficulty;
+int secret;
+const int hard1 = 3;
+const int medium1 = 2;
+const int easy1 = 1;
+const int expert1 = 26;
+const int expert2 = 8;
 
 int main(){
 cout << "Choose difficulty:\n";
-cout << "1. Easy \n" << "2. Medium \n" << "3. Hard\n";
-cout << "Answer:";
+cout << "(1) Easy \n" << "(2) Medium \n" << "(3) Hard\n";
+cout << "Answer: ";
 cin >> difficulty;
+switch(difficulty){
 
-if (difficulty == "easy" or "1" or "Easy"){
-   easy();
-}
-else {
-   cout << "Please define a difficulty before proceeding..";
-   return 0;
-}
+   case hard1:
+       clear();
+       hard();
+       break;
 
-if (difficulty == "medium" or "2" or "Medium"){
-    medium();
-}
-else {
-   cout << "Please define a difficulty before proceeding..";
-   return 0;
-}
+   case medium1:
+       clear();
+       medium();
+       break;
 
-if (difficulty == "hard" or "3" or "Hard"){
-   hard();
-}
-else {
-   cout << "Please define a difficulty before proceeding..";
-   return 0;
-}
+   case easy1:
+       clear();
+       easy();
+       break;
 
-if (difficulty == "H4rl" or "Zoter" or "h4rl" or "zoter" or "harl" or "hurl" or "zote"){
-   expert();
-}
-else {
-   cout << "Please define a difficulty before proceeding..";
-   return 0;
+   case expert1:
+       clear();
+       cout << "Secret code recieved. \n";
+       cout << "Input the second secret to proceed. \n";
+       cout << "Input: ";
+       cin >> secret;
+       if (secret = expert2){
+          clear();
+          expert();
+       }
+       else {
+          break;
+       }
+
+   default:
+       break;
 }
 
 return 0;

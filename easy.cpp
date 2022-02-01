@@ -1,3 +1,0 @@
-void easy(){
-    cout << "ballas";
-}
