@@ -1,11 +1,11 @@
 // INCLUDATIONS
 #include <iostream>
 #include <string>
+// #include <conio.h> - plans
 #include "easy.hpp"
 #include "hard.hpp"
 #include "medium.hpp"
 #include "expert.hpp"
-#include "clear.hpp"
 
 // Namespace
 using namespace std;
@@ -19,6 +19,7 @@ const int medium1 = 2;
 const int easy1 = 1;
 const int expert1 = 26;
 const int expert2 = 8;
+string clear;
 
 int main(){
 cout << "Choose difficulty:\n";
@@ -30,23 +31,23 @@ cin >> difficulty;
 switch(difficulty){
 
    case hard1:
-       clear();
+       system("cls");
        hard();
        break;
 
    case medium1:
-       clear();
+       system("cls");
        medium();
        break;
 
    case easy1:
-       clear();
+       system("cls");
        easy();
        break;
 
 // Secrets
    case expert1:
-       clear();
+       system("cls");
        cout << "Secret code recieved. \n";
        cout << "Input the second secret to proceed. \n";
        cout << "Input: ";
@@ -56,19 +57,20 @@ switch(difficulty){
           cout << "What's 9 + 10?\n";
           cin >> youstupid;
           if (youstupid == 21){
-             clear();
+             system("cls");
              cout << "Woo you're not stupid. Here have your dumb expert mode.";
              expert();
           }
        }
        else {
+          system("cls");
           cout << "Ok, bye";
           break;
        }
 
 // Where idiots land.
    default:
-      clear();
+       system("cls");
        cout << "Yur'oue very intelligent, dumbass";
        break;
 }
