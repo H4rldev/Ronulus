@@ -1,3 +1,3 @@
 void hard(){
-   std::cout << "vagina boob";
+   std::cout << "vagina boob \n";
 }

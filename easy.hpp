@@ -1,3 +1,3 @@
 void easy(){
-    std::cout << "ballas";
+    std::cout << "ballas \n";
 }

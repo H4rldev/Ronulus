@@ -1,3 +1,3 @@
 void medium(){
-    std::cout << "i got bitches";
+    std::cout << "i got bitches\n";
 }
