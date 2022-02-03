@@ -33,16 +33,19 @@ switch(difficulty){
    case hard1:
        system("cls");
        hard();
+       system("pause");
        break;
 
    case medium1:
        system("cls");
        medium();
+       system("pause");
        break;
 
    case easy1:
        system("cls");
        easy();
+       system("pause");
        break;
 
 // Secrets
@@ -60,19 +63,42 @@ switch(difficulty){
              system("cls");
              cout << "Woo you're not stupid. Here have your dumb expert mode.";
              expert();
+             system("pause");
+             break;
           }
        }
        else {
           system("cls");
           cout << "Ok, bye";
+          system("pause");
           break;
+       }
+   case expert2:
+       system("cls");
+       cout << "Secret code recieved. \n";
+       cout << "Input the second secret to proceed. \n";
+       cout << "Input: ";
+       cin >> secret;
+       if (secret = expert1){
+          system("cls");
+          cout << "Woo you're not stupid. Here have your dumb expert mode.";
+          expert();
+          system("pause");
+          break;
+          }
+       else {
+          system("cls");
+          cout << "Ok, bye";
+          system("pause");
+          return main();
        }
 
 // Where idiots land.
    default:
        system("cls");
-       cout << "Yur'oue very intelligent, dumbass";
-       break;
+       cout << "Incorrect Difficulty";
+       system("pause");
+       return main();
 }
 
 // Bye
