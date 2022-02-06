@@ -1,4 +1,4 @@
-<h1 align="center">Ronulous</h1>
+<h1 align="center">Ronulus</h1>
 
 <div align="center">
 This is a game I am developing to get better in C++ and also see if i can actually develop a game for once in my life.</p>
