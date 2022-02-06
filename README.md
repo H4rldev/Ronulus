@@ -1,4 +1,4 @@
-<h1 align="center">CPP-Text-RPG </h1><p align="center">I need a name people!</p> 
+<h1 align="center">Ronulous</h1>
 
 <div align="center">
 This is a game I am developing to get better in C++ and also see if i can actually develop a game for once in my life.</p>
