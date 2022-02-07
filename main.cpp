@@ -2,105 +2,36 @@
 #include <iostream>
 #include <string>
 // #include <conio.h> - plans
-#include "easy.hpp"
-#include "hard.hpp"
-#include "medium.hpp"
-#include "expert.hpp"
+#include "game/difficulty.hpp"
+#include "game/game.hpp"
+#include "assets/logo.hpp"
 
 // Namespace
 using namespace std;
 
-// Variables and things
-int difficulty;
-int secret;
-int youstupid;
-const int hard1 = 3;
-const int medium1 = 2;
-const int easy1 = 1;
-const int expert1 = 26;
-const int expert2 = 8;
+
 string clear;
+string howyouvebeen;
+
 
 int main(){
-cout << "Choose difficulty:\n";
-cout << "(1) Easy \n" << "(2) Medium \n" << "(3) Hard\n";
-cout << "Answer: ";
-cin >> difficulty;
-
-// The Choice between difficulties
-switch(difficulty){
-
-   case hard1:
-       system("cls");
-       hard();
-       system("pause");
-       break;
-
-   case medium1:
-       system("cls");
-       medium();
-       system("pause");
-       break;
-
-   case easy1:
-       system("cls");
-       easy();
-       system("pause");
-       break;
-
-// Secrets
-   case expert1:
-       system("cls");
-       cout << "Secret code recieved. \n";
-       cout << "Input the second secret to proceed. \n";
-       cout << "Input: ";
-       cin >> secret;
-       if (secret = expert2){
-          cout << "Last question.\n";
-          cout << "What's 9 + 10?\n";
-          cin >> youstupid;
-          if (youstupid == 21){
-             system("cls");
-             cout << "Woo you're not stupid. Here have your dumb expert mode.";
-             expert();
-             system("pause");
-             break;
-          }
-       }
-       else {
-          system("cls");
-          cout << "Ok, bye";
-          system("pause");
-          break;
-       }
-   case expert2:
-       system("cls");
-       cout << "Secret code recieved. \n";
-       cout << "Input the second secret to proceed. \n";
-       cout << "Input: ";
-       cin >> secret;
-       if (secret = expert1){
-          system("cls");
-          cout << "Woo you're not stupid. Here have your dumb expert mode.";
-          expert();
-          system("pause");
-          break;
-          }
-       else {
-          system("cls");
-          cout << "Ok, bye";
-          system("pause");
-          return main();
-       }
-
-// Where idiots land.
-   default:
-       system("cls");
-       cout << "Incorrect Difficulty";
-       system("pause");
-       return main();
+logo();
+cout << "Yo, how have you been?\n";
+cin >> howyouvebeen;
+if (howyouvebeen == "great"){
+    cout << "It's good that you feel great\n";
+    return 0;
 }
 
-// Bye
+else if (howyouvebeen == "good"){
+   cout << "It's great that you feel good \n";
+   return 0;
+}
+
+else{
+    cout << "feels bad man";
+    return 0;
+}
+
 return 0;
 }
