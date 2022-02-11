@@ -2,20 +2,18 @@
 #include <iostream>
 #include <string>
 // #include <conio.h> - plans
+// planning to use qt
 #include "game/difficulty.hpp"
 #include "game/game.hpp"
-#include "assets/logo.hpp"
-
+#include <windows.h>
+#include "beatbox.mp3"
 // Namespace
 using namespace std;
-
-
 string clear;
 string howyouvebeen;
 
 
-int main(){
-logo();
+int main(int argc, char* argv[]){
 cout << "Yo, how have you been?\n";
 cin >> howyouvebeen;
 if (howyouvebeen == "great"){

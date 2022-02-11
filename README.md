@@ -25,4 +25,4 @@ g++ -fdiagnostics-color=always -g file.*pp -o folder\\name.exe
 <a href="https://discord.gg/qtmvDqWwuV"><img src="https://img.shields.io/discord/934542719454425118?color=purple&label=Ronulus&logo=discord&style=for-the-badge" alt="Our Discord" /></a> <br> </p> <p> Gamejam Discord / Coding Discord: <br>  <a href="https://discord.gg/YPw5xAB3TT"><img src="https://img.shields.io/discord/928798050703519775?color=purple&label=Hello%20World&logo=discord&style=for-the-badge" alt="Hello World - Discord"></a> </p>
 
 <h3>License</h3>
-<p><img src="https://img.shields.io/github/license/H4rldev/CPP-Text-RPG?style=for-the-badge" alt="License: MIT"> <br></p>
+<p><img src="https://img.shields.io/github/license/h4rldev/Ronulus?color=limegreen&style=for-the-badge" alt="License: GPL"> <br></p>
