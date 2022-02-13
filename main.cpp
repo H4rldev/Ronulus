@@ -2,7 +2,8 @@
 #include <iostream>
 #include <string>
 // #include <conio.h> - plans
-// planning to use qt
+#include "glib.h"
+#include "gtk.h"
 #include "game/difficulty.hpp"
 #include "game/game.hpp"
 #include <windows.h>
