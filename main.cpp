@@ -1,12 +1,11 @@
 // INCLUDATIONS
 #include <iostream>
 #include <string>
-// #include <conio.h> - plans
-#include "glib.h"
-#include "gtk.h"
+#include <windows.h>
+#include <gtk.h>
+#include <conio.h>
 #include "game/difficulty.hpp"
 #include "game/game.hpp"
-#include <windows.h>
 #include "beatbox.mp3"
 // Namespace
 using namespace std;
